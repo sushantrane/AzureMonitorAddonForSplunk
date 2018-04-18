@@ -1,78 +1,65 @@
 {
-    "Microsoft.Web/sites/slots": {
+    "Microsoft.Storage/storageAccounts": {
         "metrics": [
-            "CpuTime",
-            "Requests",
-            "BytesReceived",
-            "BytesSent",
-            "Http101",
-            "Http2xx",
-            "Http3xx",
-            "Http401",
-            "Http403",
-            "Http404",
-            "Http406",
-            "Http4xx",
-            "Http5xx",
-            "MemoryWorkingSet",
-            "AverageMemoryWorkingSet",
-            "AverageResponseTime"
+            "UsedCapacity",
+            "Transactions",
+            "Ingress",
+            "Egress",
+            "SuccessServerLatency",
+            "SuccessE2ELatency",
+            "Availability"
         ]
     },
-    "Microsoft.Sql/servers": {
-        "metrics": []
-    },
-    "Microsoft.Network/networkSecurityGroups": {
-        "metrics": []
-    },
-    "Microsoft.Web/sites": {
+    "Microsoft.Storage/storageAccounts/blobServices": {
         "metrics": [
-            "CpuTime",
-            "Requests",
-            "BytesReceived",
-            "BytesSent",
-            "Http101",
-            "Http2xx",
-            "Http3xx",
-            "Http401",
-            "Http403",
-            "Http404",
-            "Http406",
-            "Http4xx",
-            "Http5xx",
-            "MemoryWorkingSet",
-            "AverageMemoryWorkingSet",
-            "AverageResponseTime"
+            "BlobCapacity",
+            "BlobCount",
+            "ContainerCount",
+            "Transactions",
+            "Ingress",
+            "Egress",
+            "SuccessServerLatency",
+            "SuccessE2ELatency",
+            "Availability"
         ]
     },
-    "Microsoft.Sql/servers/databases": {
+    "Microsoft.Storage/storageAccounts/tableServices": {
         "metrics": [
-            "cpu_percent",
-            "physical_data_read_percent",
-            "log_write_percent",
-            "dtu_consumption_percent",
-            "storage",
-            "connection_successful",
-            "connection_failed",
-            "blocked_by_firewall",
-            "deadlock",
-            "storage_percent",
-            "xtp_storage_percent",
-            "workers_percent",
-            "sessions_percent",
-            "dtu_limit",
-            "dtu_used"
+            "TableCapacity",
+            "TableCount",
+            "TableEntityCount",
+            "Transactions",
+            "Ingress",
+            "Egress",
+            "SuccessServerLatency",
+            "SuccessE2ELatency",
+            "Availability"
         ]
     },
-    "Microsoft.Compute/virtualMachines": {
+    "Microsoft.Storage/storageAccounts/queueServices": {
         "metrics": [
-            "Percentage CPU",
-            "Network In",
-            "Network Out",
-            "Disk Read Bytes",
-            "Disk Write Bytes",
-            "Disk Read Operations/Sec",
-            "Disk Write Operations/Sec"
+            "QueueCapacity",
+            "QueueCount",
+            "QueueMessageCount",
+            "Transactions",
+            "Ingress",
+            "Egress",
+            "SuccessServerLatency",
+            "SuccessE2ELatency",
+            "Availability"
+        ]
+    },
+    "Microsoft.Storage/storageAccounts/fileServices": {
+        "metrics": [
+            "FileCapacity",
+            "FileCount",
+            "FileShareCount",
+            "Transactions",
+            "Ingress",
+            "Egress",
+            "SuccessServerLatency",
+            "SuccessE2ELatency",
+            "Availability"
         ]
     }
 }
